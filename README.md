@@ -5,9 +5,11 @@ This curriculum is designed to enhance software engineering skills and integrate
 ## Curriculum Outline
 
 ### 📘 Week 1-2: Introduction and Setup
-- [ ] Set up Microsoft Copilot in your development environment.
-- [ ] Explore basic features and capabilities of Copilot.
-- [ ] Read Copilot documentation and guidelines.
+- [x] Set up Microsoft Copilot in your development environment.
+- [x] Explore basic features and capabilities of Copilot.
+  - [x] Learning from comments.
+  - [x] Contextual understanding.
+- [x] Read Copilot documentation and guidelines.
 
 ### 📘 Week 3-4: Language Syntax and Features
 - [ ] Python
