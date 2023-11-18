@@ -1,0 +1,40 @@
+
+{
+  "name": "JobMarketPrep2024",
+  "image": "your-docker-image",
+  "extensions": [
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    "rust-lang.rust",
+    "ms-ossdata.vscode-postgresql",
+    "ms-vscode.vscode-redis",
+    "neo4j.neo4j-graph-view",
+    "firebase.firebase-tools",
+    "mongodb.mongodb-vscode",
+    "openai.vscode-openai",
+    "googlecloudtools.cloudcode",
+    "autogen.autogen"
+  ],
+  "settings": {
+    "python.pythonPath": "/usr/local/bin/python",
+    "typescript.tsdk": "/usr/local/lib/node_modules/typescript/lib",
+    "rust-client.rustupPath": "/usr/local/bin/rustup",
+    "postgres.autoComplete.enabled": true,
+    "redis.host": "localhost",
+    "redis.port": 6379,
+    "neo4j.host": "localhost",
+    "neo4j.port": 7687,
+    "firebase.emulators.enabled": true,
+    "firebase.emulators.rules": "firestore.rules",
+    "mongodb.server": "mongodb://localhost:27017",
+    "openai.apiKey": "your-openai-api-key",
+    "cloudcode.project": "your-google-cloud-project-id",
+    "autogen.configFile": "autogen.config.json"
+  },
+  "forwardPorts": [
+    5432, // PostgreSQL
+    6379, // Redis
+    7687, // Neo4j
+    27017 // MongoDB
+  ],
+  "postCreateCommand": "npm install -g autogen"
+}
