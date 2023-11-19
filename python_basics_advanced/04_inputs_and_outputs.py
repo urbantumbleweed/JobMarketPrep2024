@@ -24,11 +24,16 @@ print(add(number1, number2))
 sentence = input("Enter a sentence: ")
 
 def count_words(string):
-    return len(string.split())
+  return len(string.split())
 
 print(count_words(sentence))
 
-# TODO: Write a program that reads a list of numbers from the user and prints the maximum and minimum numbers in the list.
+# Write a program that reads a list of numbers from the user and prints the maximum and minimum numbers in the list.
+numbers = input("Enter a list of numbers, separated by spaces: ")
+numbers_list = [int(num) for num in numbers.split()]
+
+print(f'Max: {max(numbers_list)}\nMin: {min(numbers_list)}')
+
 # TODO: Write a program that reads a file name from the user and prints the contents of the file.
 
 # Your code goes here...
