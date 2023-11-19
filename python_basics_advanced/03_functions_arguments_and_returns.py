@@ -30,7 +30,9 @@ print(calculate_average(numbers_list))
 def is_even(num):
     return num % 2 == 0
 
-# TODO: Call the "is_even" function with a number of your choice and print the result
+# Call the "is_even" function with a number of your choice and print the result
+number = int(input("Is it Even? Enter a number: "))
+print(is_even(number))
 
 # TODO: Define a function called "get_max" that takes a list of numbers as an argument and returns the maximum number
 # TODO: Call the "get_max" function with a list of numbers of your choice and print the result
