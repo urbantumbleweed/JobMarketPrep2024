@@ -1,5 +1,8 @@
 
-# TODO: Write a program that prompts the user to enter their name and prints a welcome message.
+# Write a program that prompts the user to enter their name and prints a welcome message.
+name = input("What is your name? ")
+print(f"Hello, {name}!")
+
 # TODO: Write a program that reads a number from the user and prints its square.
 # TODO: Write a program that reads two numbers from the user and prints their sum.
 # TODO: Write a program that reads a sentence from the user and prints the number of words in the sentence.
