@@ -35,6 +35,10 @@ for character in string:
 # Start with a variable `num` set to 1
 # Increment `num` by 1 in each iteration
 # Stop the loop when `num` is greater than 5
+num = 1
+while num <= 5:
+    print(num)
+    num += 1
 
 # Use a while loop to find the factorial of a number
 # The factorial of a number is the product of all positive integers less than or equal to that number
@@ -43,6 +47,13 @@ for character in string:
 # Multiply `factorial` by `num` in each iteration
 # Decrement `num` by 1 in each iteration
 # Stop the loop when `num` is less than or equal to 0
+num = 5
+factorial = 1
+while num > 0:
+    factorial *= num
+    num -= 1
+
+print(factorial)
 
 # 4. Control Flow in Programs
 
