@@ -16,8 +16,15 @@ num1 = int(input("Enter a number: "))
 num2 = int(input("Enter another number: "))
 print(add_numbers(num1, num2))
 
-# TODO: Define a function called "calculate_average" that takes a list of numbers as an argument and returns their average
-# TODO: Call the "calculate_average" function with a list of numbers of your choice and print the result
+# Define a function called "calculate_average" that takes a list of numbers as an argument and returns their average
+def calculate_average(numbers):
+    return sum(numbers) / len(numbers)
+
+# Call the "calculate_average" function with a list of numbers of your choice and print the result
+numbers = input("Enter a list of numbers, separated by spaces: ")
+numbers_list = [int(num) for num in numbers.split()]
+
+print(calculate_average(numbers_list))
 
 # TODO: Define a function called "is_even" that takes a number as an argument and returns True if it is even, False otherwise
 # TODO: Call the "is_even" function with a number of your choice and print the result
