@@ -26,7 +26,10 @@ numbers_list = [int(num) for num in numbers.split()]
 
 print(calculate_average(numbers_list))
 
-# TODO: Define a function called "is_even" that takes a number as an argument and returns True if it is even, False otherwise
+# Define a function called "is_even" that takes a number as an argument and returns True if it is even, False otherwise
+def is_even(num):
+    return num % 2 == 0
+
 # TODO: Call the "is_even" function with a number of your choice and print the result
 
 # TODO: Define a function called "get_max" that takes a list of numbers as an argument and returns the maximum number
