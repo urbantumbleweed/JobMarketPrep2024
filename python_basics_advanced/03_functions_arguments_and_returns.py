@@ -7,8 +7,14 @@ def greet(name):
 name = input("What is your name? ")
 greet(name)
 
-# TODO: Define a function called "add_numbers" that takes two numbers as arguments and returns their sum
-# TODO: Call the "add_numbers" function with two numbers of your choice and print the result
+# Define a function called "add_numbers" that takes two numbers as arguments and returns their sum
+def add_numbers(num1, num2):
+    return num1 + num2
+
+# Call the "add_numbers" function with two numbers of your choice and print the result
+num1 = int(input("Enter a number: "))
+num2 = int(input("Enter another number: "))
+print(add_numbers(num1, num2))
 
 # TODO: Define a function called "calculate_average" that takes a list of numbers as an argument and returns their average
 # TODO: Call the "calculate_average" function with a list of numbers of your choice and print the result
