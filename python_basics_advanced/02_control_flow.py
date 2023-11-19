@@ -87,6 +87,11 @@ else:
 # Write a program that asks the user for a password
 # If the password is "password123", print "Access granted"
 # Otherwise, print "Access denied"
+password = input("Enter your password: ")
+if password == "password123":
+    print("Access granted")
+else:
+    print("Access denied")
 
 # Write a program that asks the user for a grade (a number between 0 and 100)
 # If the grade is greater than or equal to 90, print "A"
