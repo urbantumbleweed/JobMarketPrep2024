@@ -44,3 +44,13 @@ numbers = input("Get the max. Enter a list of numbers, separated by spaces: ")
 numbers_list = [int(num) for num in numbers.split()]
 
 print(get_max(numbers_list))
+
+
+# Define a function called "get_ascii_sum" that takes a string as an argument and returns the sum of the ASCII values of its characters
+# Call the "get_ascii_sum" function with a string of your choice and print the result
+
+def get_ascii_sum(string):
+    return sum([ord(char) for char in string])
+
+string = input("Get the ASCII sum. Enter a string: ")
+print(get_ascii_sum(string))
