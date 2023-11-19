@@ -34,8 +34,8 @@ def is_even(num):
 number = int(input("Is it Even? Enter a number: "))
 print(is_even(number))
 
-# TODO: Define a function called "get_max" that takes a list of numbers as an argument and returns the maximum number
-# TODO: Call the "get_max" function with a list of numbers of your choice and print the result
+# Define a function called "get_max" that takes a list of numbers as an argument and returns the maximum number
+# Call the "get_max" function with a list of numbers of your choice and print the result
 
 def get_max(numbers):
     return max(numbers)
