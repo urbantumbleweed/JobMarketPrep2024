@@ -25,6 +25,9 @@ for number in numbers:
 
 # Use a for loop to iterate over a string and print each character
 # The string is "Hello, World!"
+string = "Hello, World!"
+for character in string:
+    print(character)
 
 # 3. While Loops
 
