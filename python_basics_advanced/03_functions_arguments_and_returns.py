@@ -36,3 +36,11 @@ print(is_even(number))
 
 # TODO: Define a function called "get_max" that takes a list of numbers as an argument and returns the maximum number
 # TODO: Call the "get_max" function with a list of numbers of your choice and print the result
+
+def get_max(numbers):
+    return max(numbers)
+
+numbers = input("Get the max. Enter a list of numbers, separated by spaces: ")
+numbers_list = [int(num) for num in numbers.split()]
+
+print(get_max(numbers_list))
