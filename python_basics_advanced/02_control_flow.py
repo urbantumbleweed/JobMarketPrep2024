@@ -74,6 +74,15 @@ else:
 # If the number is divisible by 5, print "Buzz"
 # If the number is divisible by both 3 and 5, print "FizzBuzz"
 # Otherwise, print the number itself
+number = int(input("Enter a number: "))
+if number % 3 == 0 and number % 5 == 0:
+    print("FizzBuzz")
+elif number % 3 == 0:
+    print("Fizz")
+elif number % 5 == 0:
+    print("Buzz")
+else:
+    print(number)
 
 # Write a program that asks the user for a password
 # If the password is "password123", print "Access granted"
