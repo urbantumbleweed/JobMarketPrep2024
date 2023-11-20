@@ -31,8 +31,4 @@ if not os.path.isabs(file_name):
 
 with open(file_name, "r") as file:
   print(file.read())
-file_name = input("Enter a file name: ")
-
-with open(file_name, "r") as file:
-    print(file.read())
 
