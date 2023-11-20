@@ -1,3 +1,4 @@
+import os
 
 # Write a program that prompts the user to enter their name and prints a welcome message.
 name = input("What is your name? ")
@@ -16,24 +17,22 @@ number1 = int(input("Enter a number: "))
 number2 = int(input("Enter another number: "))
 
 def add(num1, num2):
-    return num1 + num2
+  return num1 + num2
 
 print(add(number1, number2))
 
-# Write a program that reads a sentence from the user and prints the number of words in the sentence.
-sentence = input("Enter a sentence: ")
 
-def count_words(string):
-  return len(string.split())
+file_name = input("Enter a file name: ")
 
-print(count_words(sentence))
+# Check if the file path is relative or absolute
+if not os.path.isabs(file_name):
+  # Resolve the relative file path to an absolute path
+  file_name = os.path.abspath(file_name)
 
-# Write a program that reads a list of numbers from the user and prints the maximum and minimum numbers in the list.
-numbers = input("Enter a list of numbers, separated by spaces: ")
-numbers_list = [int(num) for num in numbers.split()]
+with open(file_name, "r") as file:
+  print(file.read())
+file_name = input("Enter a file name: ")
 
-print(f'Max: {max(numbers_list)}\nMin: {min(numbers_list)}')
+with open(file_name, "r") as file:
+    print(file.read())
 
-# TODO: Write a program that reads a file name from the user and prints the contents of the file.
-
-# Your code goes here...
